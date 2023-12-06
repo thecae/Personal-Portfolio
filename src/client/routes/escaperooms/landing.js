@@ -36,9 +36,9 @@ const SpotlightBlog = ({ blog }) => (
     style={{ backgroundImage: `url(/assets/blogs/${blog.image})` }}
     to={`/escape/blog/${blog.slug}`}
   >
-    <strong>{blog.name}</strong>
+    <strong className="font-bold text-shadow-lg">{blog.name}</strong>
     <br />
-    {blog.location}
+    <p className="text-shadow-md">{blog.location}</p>
   </Link>
 );
 
