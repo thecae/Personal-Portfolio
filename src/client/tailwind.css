@@ -2,14 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
+.markdown {
+  & h3 {
+    color: #b877db;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 .text-shadow-sm {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px #16161c;
 }
 
 .text-shadow-md {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 3px #16161c;
 }
 
 .text-shadow-lg {
-  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 3px 4px #16161c;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/public/assets/CaskaydiaCoveNerdFont-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/public/assets/CaskaydiaCoveNerdFont-LightItalic.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/public/assets/CaskaydiaCoveNerdFont-SemiLight.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/public/assets/CaskaydiaCoveNerdFont-SemiLightItalic.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/public/assets/CaskaydiaCoveNerdFont-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/public/assets/CaskaydiaCoveNerdFont-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/public/assets/CaskaydiaCoveNerdFont-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/public/assets/CaskaydiaCoveNerdFont-BoldItalic.woff2")
+    format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/public/assets/CaskaydiaCoveNerdFont-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CaskaydiaCoveNerdFont";
+  src: url("/public/assets/CaskaydiaCoveNerdFont-SemiBoldItalic.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: italic;
 }

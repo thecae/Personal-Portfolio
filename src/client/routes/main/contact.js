@@ -6,13 +6,15 @@ import { Link } from "react-router-dom";
 const Contact = () => (
   <div className="flex flex-col justify-center items-center mx-auto w-3/4 my-12">
     <div className="text-center">
-      <h1 className="text-7xl font-extrabold my-3">Say Hello!</h1>
+      <h1 className="text-7xl font-extrabold my-3 text-nightfall-function">
+        Say Hello!
+      </h1>
       <h3 className="font-semibold text-3xl italic">
         I am currently seeking new opportunities.
       </h3>
     </div>
     <div className="text-center my-12">
-      <p className="text-lg">
+      <p className="text-lg text-nightfall-string">
         I am currently looking for new opportunities in the Cybersecurity
         industry, both red-teaming and blue-teaming. I am also interested in
         working open-source projects in Cybersecurity, artificial intelligence,

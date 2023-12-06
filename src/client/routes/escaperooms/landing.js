@@ -5,10 +5,10 @@ import { Link, useNavigate } from "react-router-dom";
 
 const LandHead = () => (
   <div className="flex flex-col justify-center items-center py-12">
-    <h1 className="text-center text-5xl font-bold mb-3">
+    <h1 className="text-center text-5xl font-bold mb-3 text-nightfall-function">
       Cole's Escape Room Blog
     </h1>
-    <p className="text-center block text-lg italic">
+    <p className="text-center block text-lg italic text-nightfall-string">
       Thanks for visiting my escape room blog! As I continue to do more escape
       rooms around the country (and hopefully around the world), I plan to
       continue to document my experiences here. I hope you find these reviews
@@ -72,7 +72,9 @@ const Remainder = ({ blogs }) => (
 
 const LandBody = ({ blogs }) => (
   <>
-    <h1 className="text-center font-bold text-3xl mb-5">Latest Articles</h1>
+    <h1 className="text-center font-bold text-3xl mb-5 text-nightfall-keyword">
+      Latest Articles
+    </h1>
     <Spotlight blogs={blogs.slice(0, 4)} />
     <Remainder blogs={blogs.slice(4)} />
   </>

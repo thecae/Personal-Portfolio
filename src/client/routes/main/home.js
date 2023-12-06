@@ -16,10 +16,10 @@ const Item = ({ to, image, text }) => (
 const Home = () => (
   <div className="flex flex-col justify-center items-center mx-auto w-3/4 my-12">
     <div className="text-center mb-12">
-      <h1 className="text-6xl font-bold my-3 italic">
+      <h1 className="text-6xl text-nightfall-function font-bold my-3 italic">
         Hello! Welcome to my page.
       </h1>
-      <h3 className="text-lg font-light italic">
+      <h3 className="text-lg font-light italic text-nightfall-string">
         Here you can find some of my current passion projects. I have a
         Cybersecurity notes repository to teach the basics of low-level
         programming, binary exploitation, and reverse engineering. I have a list
@@ -30,7 +30,9 @@ const Home = () => (
       </h3>
     </div>
     <div className="w-full">
-      <h1 className="text-center font-bold text-3xl mb-5">Navigation</h1>
+      <h1 className="text-center font-bold text-3xl mb-5 text-nightfall-keyword">
+        Navigation
+      </h1>
       <div className="grid grid-cols-2 gap-4 pb-4">
         <Item
           to="https://cyber.cole-ellis.com"

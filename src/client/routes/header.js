@@ -28,7 +28,7 @@ HeaderLink.propTypes = {
 
 const Header = () => {
   return (
-    <nav className="flex p-0 h-11 w-full bg-gray-800">
+    <nav className="flex p-0 h-11 w-full bg-nightfall-highlight">
       <div className="flex mx-auto justify-between max-w-5xl items-center static w-full px-5">
         <HeaderLogo img={"/assets/logo.png"} url={"/"} />
         <HeaderLink name={"Cyber Notes"} url={"https://cyber.cole-ellis.com"} />

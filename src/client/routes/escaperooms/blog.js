@@ -7,18 +7,24 @@ import { useNavigate } from "react-router-dom";
 
 const Summary = ({ site, loc }) => (
   <div>
-    <h3 className="font-bold mt-1 mb-0 text-gray-500 text-sm">
+    <h3 className="font-bold mt-1 mb-0 text-nightfall-comment text-sm">
       {site.toUpperCase()}
     </h3>
-    <h3 className="font-semibold mt-1 mb-0 text-gray-500 text-sm">{loc}</h3>
+    <h3 className="font-semibold mt-1 mb-0 text-nightfall-comment text-sm">
+      {loc}
+    </h3>
   </div>
 );
 
 const PageHeader = ({ blog }) => (
   <div className="block pt-12">
     <Summary site={blog.site} loc={blog.location}></Summary>
-    <h1 className="mb-2 mt-8 text-6xl font-extrabold">{blog.name}</h1>
-    <p className="my-0 text-xl font-medium">{blog.description}</p>
+    <h1 className="mb-2 mt-8 text-6xl font-extrabold text-nightfall-function">
+      {blog.name}
+    </h1>
+    <p className="my-0 text-xl font-medium text-nightfall-string">
+      {blog.description}
+    </p>
   </div>
 );
 
@@ -47,7 +53,7 @@ const Blog = () => {
         src={`/assets/blogs/${blog.image}`}
         alt={`${blog.name}: Image`}
       />
-      <Markdown>{blog.content}</Markdown>
+      <Markdown className="markdown mb-12">{blog.content}</Markdown>
     </div>
   );
 };
