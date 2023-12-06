@@ -1,0 +1,11 @@
+node_modules/*
+.idea/*
+.DS_Store
+package-lock.json
+public/css
+public/js
+src/server/_undone/*
+public/images/_undone/*
+.connect.sh
+.env
+**/_undone/*
