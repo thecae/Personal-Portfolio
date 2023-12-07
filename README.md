@@ -10,13 +10,15 @@ The site has a few sections:
 * Home
 * Blog - A list of escape room reviews I've written
 * Portfolio - A picturesque resume of my work
+* Solitaire - A solitaire game I wrote for CS4288 (Web System Architecture)
 
 ## Deployment Stack
 
 The site is built on React and is deployed on an AWS EC2 instance. The site is served using `nginx`.  I use `pm2` to deploy the process in production mode (`npm run deploy`) and NodeJS to do local testing (`npm run start`).  The site is compiled using `esbuild` with `tailwindcss` as the styler.
 
-
 Blogs are held in a static folder and are parsed using a very simple API.  The API is built using `express`.  The API is used to retrieve the list of blogs (`GET /api/blogs`) and to retrieve the content of a specific blog (`GET /api/blogs/:slug`).  In the future, I might move this to a MongoDB database, but for now, this does the trick. Each blog has a `slug` that serves as the filename of the blog, the URL of the blog, and its unique identifier.  Blogs are found by slugs.
+
+The API for the Solitaire game uses Redis and MongoDB to store games and login states. I use MongoDB to store uses, games, and moves made; Redis is used to ensure logins across refreshes. The API is built using `express`. This site is served as a subroute of the main site using a `<Router>` object inside a `<Route>` component.
 
 ## Future Plans
 I have a long list of escape rooms I have yet to review. They are all posted on my Morty profile and are sitting locally on my machine. I write notes on each of the escape rooms after I do them, but I have yet to write the full content of the blogs. I want to finally make this change to add the blogs of the rooms I've done.
