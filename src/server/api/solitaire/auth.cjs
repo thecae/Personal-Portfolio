@@ -4,8 +4,8 @@ const crypto = require("crypto");
 const jwt = require("jsonwebtoken");
 
 const ghConfig = {
-  client_id: "45ab4893b6e5670fe933",
-  client_secret: "a320e8c4fed59d82402808f470cd34dc649a4baf",
+  client_id: process.env.GHCONFIG_CLIENT,
+  client_secret: process.env.GHCONFIG_SECRET,
   scope: "user:email",
   url: "https://cole-ellis.com/api/auth/github",
 };
