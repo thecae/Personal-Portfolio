@@ -16,6 +16,7 @@ export default {
           function: "#d99264",
           keyword: "#b877db",
           string: "#64d1a9",
+          variable: "#d56770",
         },
       },
     },

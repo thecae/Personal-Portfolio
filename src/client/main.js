@@ -19,6 +19,9 @@ const Blog = lazy(() => import("./routes/escaperooms/blog.js"));
 // portfolio
 const Portfolio = lazy(() => import("./routes/portfolio/page.js"));
 
+// solitaire
+const Solitaire = lazy(() => import("./routes/solitaire/main.js"));
+
 const Fallback = () => (
   <div className="flex justify-center items-center h-screen text-5xl text-gray-600 font-light">
     Loading ..
@@ -33,9 +36,14 @@ const App = () => (
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+
         <Route path="/escape" element={<EscapeRooms />} />
         <Route path="/escape/blog/:slug" element={<Blog />} />
+
         <Route path="/portfolio" element={<Portfolio />} />
+
+        <Route path="/solitaire/*" element={<Solitaire />} />
+
         <Route exact path="/404" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

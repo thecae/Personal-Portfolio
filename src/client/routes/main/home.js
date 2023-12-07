@@ -57,12 +57,17 @@ const Home = () => (
         <Item
           to="/portfolio"
           image="/assets/home/wp-portfolio.jpg"
-          text="Portfolio"
+          text="Portfolio Site"
         />
         <Item
           to="/escape"
           image="/assets/home/wp-escape.png"
           text="Escape Room Blogs"
+        />
+        <Item
+          to="/solitaire"
+          image="/assets/home/wp-solitaire.png"
+          text="Solitaire Game"
         />
       </div>
     </div>
