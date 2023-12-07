@@ -12,7 +12,7 @@
     "w:tailwind": "tailwindcss -i ./src/client/tailwind.css -o ./public/css/tailwind.css --watch",
     "start": "node ./src/server/index.cjs",
     "w:start": "nodemon ./src/server/index.cjs",
-    "deploy": "pm2 start ./src/server/index.js --name coleellis"
+    "deploy": "pm2 start ./src/server/index.cjs --name coleellis"
   },
   "author": "C. Ellis",
   "license": "ISC",
