@@ -9,4 +9,3 @@ public/images/_undone/*
 .connect.sh
 .env
 **/_undone/*
-.pre-commit-config.yaml
