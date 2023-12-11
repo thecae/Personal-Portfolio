@@ -69,6 +69,11 @@ const Home = () => (
           image="/assets/home/wp-solitaire.png"
           text="Solitaire Game"
         />
+        <Item
+          to="/physics"
+          image="/assets/home/wp-physics.png"
+          text="Relativity Simulator"
+        />
       </div>
     </div>
   </div>

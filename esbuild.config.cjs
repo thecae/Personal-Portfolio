@@ -10,8 +10,8 @@ const buildOptions = {
   bundle: true,
   outdir: path.join(__dirname, "public/js"),
   format: "esm",
-  splitting: true,
-  minify: true,
+  // splitting: true,
+  // minify: true,
   sourcemap: "external",
   platform: "browser",
   loader: {
@@ -19,7 +19,7 @@ const buildOptions = {
     ".css": "css",
   },
   define: {
-    "process.env.NODE_ENV": '"production"',
+    "process.env.NODE_ENV": '"development"',
   },
 };
 

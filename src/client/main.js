@@ -17,7 +17,7 @@ const EscapeRooms = lazy(() => import("./routes/escaperooms/landing.js"));
 const Blog = lazy(() => import("./routes/escaperooms/blog.js"));
 
 // portfolio
-const Portfolio = lazy(() => import("./routes/portfolio/page.js"));
+const Portfolio = lazy(() => import("./routes/portfolio/Portfolio.js"));
 
 // solitaire
 const Solitaire = lazy(() => import("./routes/solitaire/main.js"));
