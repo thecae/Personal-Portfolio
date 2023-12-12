@@ -14,7 +14,7 @@ const Portfolio = () => {
       controls={true}
       src="https://lottie.host/0a7f7158-b95c-448d-a688-aae1027190cc/LLlGktJFB8.json"
       style={{ height: "300px", width: "300px" }}
-    ></Player>
+    />
   );
 };
 

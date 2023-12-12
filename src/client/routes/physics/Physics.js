@@ -40,7 +40,19 @@ const Physics = () => {
 
     // Cleanup
     return () => {
-      mountRef.current.removeChild(renderer.domElement);
+      if (mountRef.current && renderer.domElement) {
+        // dispose of the scene
+        geometry.dispose();
+        material.dispose();
+        scene.remove(cube);
+
+        // stop the animation
+        renderer.forceContextLoss();
+        renderer.dispose();
+
+        // remove the canvas element
+        mountRef.current.removeChild(renderer.domElement);
+      }
     };
   }, []);
 

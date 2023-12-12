@@ -83,6 +83,18 @@ const setup = async () => {
   // Import our routes
   require("./routes.cjs")(app);
 
+  // Set CORS headers for font files
+  app.use((req, res, next) => {
+    if (
+      req.path.endsWith(".woff2") ||
+      req.path.endsWith(".woff") ||
+      req.path.endsWith(".ttf")
+    ) {
+      res.header("Access-Control-Allow-Origin", "*");
+    }
+    next();
+  });
+
   app.get("*", (req, res) => {
     res.render("base.pug", {});
   });

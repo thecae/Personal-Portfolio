@@ -1,12 +1,17 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="utf-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1")
-        link(rel="icon" href="/images/favicon.ico")
-        link(rel="stylesheet" href="/css/tailwind.css")
-        title Cole Ellis
-    body(class="bg-nightfall-background font-CaskaydiaCoveNerdFont font-mono m-0 text-nightfall-foreground")
-        div#root
-        script(type="module" src="/js/main.js")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="icon" href="/images/favicon.ico")
+    link(rel="stylesheet" href="/css/tailwind.css")
+    link(href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet")
+    title Cole Ellis
+    style.
+      html {
+        font-family: 'JetBrains Mono', monospace;
+      }
+  body(class="bg-nightfall-background m-0 text-nightfall-foreground")
+    div#root
+    script(type="module" src="/js/main.js")

@@ -1,8 +1,9 @@
 "use strict";
 
-import React, { lazy, Suspense } from "react";
+import React, { createRef, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 // components
 import Header from "./routes/header.js";
@@ -25,11 +26,19 @@ const Solitaire = lazy(() => import("./routes/solitaire/main.js"));
 // physics
 const Physics = lazy(() => import("./routes/physics/Physics.js"));
 
-const Fallback = () => (
-  <div className="flex justify-center items-center h-screen text-5xl text-gray-600 font-light">
-    Loading ..
-  </div>
-);
+const Fallback = () => {
+  const player = createRef();
+  return (
+    <Player
+      ref={player}
+      autoplay={true}
+      loop={true}
+      controls={true}
+      src="https://lottie.host/40f6282e-f601-4525-880e-13320284f5ed/28clpVf8o5.json"
+      style={{ height: "300px", width: "300px" }}
+    />
+  );
+};
 
 // router setup
 const App = () => (

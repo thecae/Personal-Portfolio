@@ -13,7 +13,7 @@ module.exports = (app) => {
     try {
       const { slug } = req.params;
       const fileContents = fs.readFileSync(
-        path.join(__dirname, "blog", `${slug}.md`),
+        path.join(__dirname, "../../blog", `${slug}.md`),
         "utf8"
       );
       const { data, content } = greyMatter(fileContents);
@@ -29,12 +29,12 @@ module.exports = (app) => {
    */
   app.get("/api/blog", (req, res) => {
     // get all files in blog directory
-    const files = fs.readdirSync(path.join(__dirname, "blog"));
+    const files = fs.readdirSync(path.join(__dirname, "../../blog"));
     let blogs = [];
     files.forEach((file) => {
       if (file.split(".").pop() !== "md") return;
       const fileContents = fs.readFileSync(
-        path.join(__dirname, "blog", file),
+        path.join(__dirname, "../../blog", file),
         "utf8"
       );
       const { data } = greyMatter(fileContents);
