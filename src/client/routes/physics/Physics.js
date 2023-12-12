@@ -14,7 +14,7 @@ const Physics = () => {
       1000
     );
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight - 44);
     mountRef.current.appendChild(renderer.domElement);
 
     // Cube setup

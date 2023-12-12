@@ -36,6 +36,7 @@ const Fallback = () => {
       controls={true}
       src="https://lottie.host/40f6282e-f601-4525-880e-13320284f5ed/28clpVf8o5.json"
       style={{ height: "300px", width: "300px" }}
+      className="flex justify-center items-center"
     />
   );
 };
