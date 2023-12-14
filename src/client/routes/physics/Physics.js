@@ -72,7 +72,6 @@ const Physics = () => {
     earth.position.z = distanceScale;
     scene.add(earth);
     scene.add(eaOrbit);
-    console.log("Earth orbit radius:", eaOrbit);
     const { planet: mars, orbit: maOrbit } = createPlanet(
       0.53 * sizeScale,
       "./assets/physics/marsmap.jpg",
@@ -233,7 +232,8 @@ const Physics = () => {
 
     // Cleanup
     return () => {
-      mountRef.current.removeChild(renderer.domElement);
+      if (mountRef.current && renderer.domElement)
+        mountRef.current.removeChild(renderer.domElement);
     };
   }, []);
 
