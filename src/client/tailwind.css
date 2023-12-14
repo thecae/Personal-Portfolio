@@ -21,3 +21,72 @@
 .text-shadow-lg {
   text-shadow: 3px 3px 4px #16161c;
 }
+
+.slider-thumb::-webkit-slider-thumb {
+  @apply bg-nightfall-comment;
+}
+
+.slider-thumb::-moz-range-thumb {
+  @apply bg-nightfall-comment;
+}
+
+.slider-track::-webkit-slider-runnable-track {
+  @apply bg-nightfall-highlight rounded-2xl shadow-sm shadow-nightfall-comment;
+}
+
+.slider-track::-moz-range-track {
+  @apply bg-nightfall-highlight rounded-2xl shadow-sm shadow-nightfall-comment;
+}
+
+.slider-track::-moz-focus-outer {
+  border: 0;
+}
+
+.slider-track::-moz-focus-inner {
+  border: 0;
+}
+
+.clock-shadow {
+  box-shadow: 4px 4px 10px rgba(41, 44, 56, 0.5),
+    inset -4px -4px 10px rgba(0, 0, 0, 0.5),
+    inset 4px 4px 10px rgba(41, 44, 56, 0.5), -4px -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.clock-outface {
+  --webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.clock-tick1 {
+  --webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.clock-tick2 {
+  --webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.clock-tick3 {
+  --webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+.clock-tick4 {
+  --webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.clock-outface::after,
+.clock-outface::before,
+.clock-tick1,
+.clock-tick2,
+.clock-tick3,
+.clock-tick4 {
+  content: "";
+}
